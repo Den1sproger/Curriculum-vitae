@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Denis Strigo - Full-Stack Web Developer</title>
+</head>
+
+
+<body class="page-body">
+
+  <header class="header">
+    <button class="burger">
+      <span title="main menu">&#9776;</span>
+    </button>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="#about-me" class="navigation-link">About me</a></li>
+        <li class="navigation-item"><a href="#contacts" class="navigation-link">Contacts</a></li>
+        <li class="navigation-item"><a href="#hard-skills" class="navigation-link">Hard skills</a></li>
+        <li class="navigation-item"><a href="#soft-skills" class="navigation-link">Soft skills</a></li>
+        <li class="navigation-item"><a href="#code" class="navigation-link">Code</a></li>
+        <li class="navigation-item"><a href="#projects" class="navigation-link">Projects</a></li>
+        <li class="navigation-item"><a href="#language" class="navigation-link">Language</a></li>
+        <li class="navigation-item"><a href="#education" class="navigation-link">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="section" id="about-me">
+      <img class="avatar" src="assets/avatar.jpg" alt="avatar" width="400" height="400">
+      <div class="about-me-text">
+        <h1 class="section-title">Hi, i'm <span class="name-colors">Denis Strigo</span></h1>
+        <p>
+          <span class="specialization">Full-Stack Developer</span>
+          <br><br>
+          Hello! My name is Denis. I am a beginner Full-Stack web developer. I live in Russia, in Nizhny Novgorod city.
+          I like to learn new things, I like to work and get money for my work and I want to develop in the WEB development.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="hard-skills">
+      <h2>Hard skills</h2>
+      <ul class="ul-skills">
+        <li>Python</li>
+        <li>Django</li>
+        <li>JavaScript</li>
+        <li>HTML&CSS</li>
+        <li>Git&GitHub</li>
+        <li>SQL</li>
+        <li>MySQL, PostgreSQL</li>
+        <li>API</li>
+        <li>Object oriented programming</li>
+      </ul>
+    </section>
+
+    <section class="section" id="soft-skills">
+      <h2>Soft skills</h2>
+      <ul class="ul-skills">
+        <li>Responsibility</li>
+        <li>Fast learnability</li>
+        <li>Optimism</li>
+        <li>Communication</li>
+        <li>Desire to learn new things</li>
+        <li>Work in team</li>
+      </ul>
+    </section>
+
+    <section class="section" id="code">
+      <h2>Code</h2>
+
+      <div class="code">
+        <div>
+          <h3>JavaScript</h3>
+          <pre>
+<code class="code-block">
+<span class="define">function</span> <span class="function-name">showSumByRow</span>(<span class="variable-name">matrix</span>) {
+  <span class="variable-name">console</span>.<span class="function-name">log</span>(<span class="string">'show sum by row<span class="manage-symbols">\n</span>'</span>)
+
+  <span class="keyword">for</span> (<span class="define">let</span> <span class="variable-name">i</span> = 0; <span class="variable-name">i</span> &lt; <span class="variable-name">matrix</span>.<span class="variable-name">length</span>; <span class="variable-name">i</span>++) {
+    <span class="define">let</span> <span class="variable-name">sum</span> = 0
+    <span class="keyword">for</span> (<span class="define">let</span> <span class="variable-name">j</span> = 0; <span class="variable-name">j</span> &lt; <span class="variable-name">matrix</span><span class="staples">[</span><span class="variable-name">i</span><span class="staples">]</span>.<span class="variable-name">length</span>; <span class="variable-name">j</span>++) {
+      <span class="variable-name">sum</span> += <span class="variable-name">matrix</span><span class="staples">[</span><span class="variable-name">i</span><span class="staples">]</span><span class="staples">[</span><span class="variable-name">j</span><span class="staples">]</span>
+    }
+    <span class="variable-name">console</span>.<span class="function-name">log</span>(<span class="string">`row <span class="staples">${</span><span class="variable-name">i</span><span class="staples">}</span> => <span class="staples">${</span><span class="variable-name">sum</span><span class="staples">}</span>`</span>)
+  }
+}
+</code>
+          </pre>
+        </div>
+        
+        <div>
+          <h3>Python</h3>
+          <pre>
+<code class="code-block">
+<span class="define">def</span> <span class="function-name">create_models_dict</span><span class="staples">(</span><span class="variable-name">self</span>, <span class="variable-name">url</span>: <span class="datatype">str</span><span class="staples">)</span> -> <span class="datatype">dict</span>:
+    <span class="variable-name">cards</span> = <span class="variable-name">self</span>.<span class="function-name">create_soup</span><span class="staples">(</span>
+        <span class="variable-name">url</span>=<span class="variable-name">url</span>, <span class="variable-name">cls_link</span>=<span class="string">'product-link 1'</span>,
+        <span class="variable-name">cls_categories</span>=<span class="string">'row no-gutter products-list categories-list'</span>
+    <span class="staples">)</span>
+
+    <span class="variable-name">models</span> = <span class="staples">{}</span>
+    <span class="keyword">for</span> <span class="variable-name">model</span> <span class="keyword">in</span> <span class="variable-name">cards</span>:
+        <span class="variable-name">model_name</span> = <span class="variable-name">model</span>.<span class="function-name">find</span><span class="staples">(</span><span class="string">'div'</span>, <span class="variable-name">class_</span>=<span class="string">'product-title'</span><span class="staples">)</span>.<span class="variable-name">text</span>.<span class="function-name">strip</span><span class="staples">()</span>
+        <span class="variable-name">link</span> = <span class="string">'<u>https://repairmyapple.ru</u>'</span> + <span class="variable-name">model</span>.<span class="function-name">get</span><span class="staples">(</span>'href'<span class="staples">)</span>
+        <span class="variable-name">models</span><span class="staples">[</span><span class="variable-name">model_name</span><span class="staples">]</span> = <span class="variable-name">link</span>
+
+    <span class="keyword">return</span> <span class="variable-name">models</span>
+</code>
+          </pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <ul class="projects-list">
+        <li class="project-item">
+          <h3>Telegram bots sports betting quiz</h3>
+          <a class="project-link" href="https://github.com/Den1sproger/tournament-management-tg-bot" target="_blank">
+            <img src="assets/betting_quiz.jpg" alt="sport betting quiz">
+          </a>
+        </li>
+        <li class="project-item">
+          <h3>Bet signal sounder</h3>
+          <a class="project-link" href="https://github.com/Den1sproger/Reviews_and_suggestions_bot" target="_blank">
+            <img src="assets/reviews_suggestions.jpg" alt="reviews suggestions bot">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="section" id="language">
+      <h2>Language</h2>
+      <p class="p-text">
+        English level - A1-A2 - beginner. I can read technical documentation a little<br>
+        Main language - Russian
+      </p>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <p class="p-text">2019 - 2021<br>Nizhny Novgorod School № 11, general secondary education</p>
+    </section>
+
+    <section class="section" id="contacts">
+      <h2>Contacts</h2>
+      <p class="p-text">
+        email: strigodenis@gmail.com<br>
+        Telegram: @weliveinmatr1x<br>
+        GitHub: <a href="https://github.com/Den1sproger" target="_blank">Den1sproger</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>2023 By <u>Denis Strigo</u></p>
+    <a href="https://github.com/Den1sproger" target="_blank">GitHub</a>
+    <a href="https://rs.school/js/" target="_blank">
+      <img src="assets/rs_school_js.svg" width="80" height="30" alt="RS School">
+    </a>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+
+</html>
